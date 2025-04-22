@@ -1,0 +1,185 @@
+body {
+    font-family: "Marcellus", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+#hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .hero-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#program-overview {
+    background-color: #fff;
+}
+
+#faculty .faculty-member {
+    margin-bottom: 30px;
+}
+
+#faculty .faculty-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid black; /* Adds a black border around the faculty images */
+    border-radius: 10px; /* Optional: Adds rounded corners to the border */
+}
+
+/* Add black border around the gallery images */
+#gallery .gallery-grid img {
+    margin-bottom: 15px;
+    border: 2px solid black; /* Adds a black border around the gallery images */
+    border-radius: 10px; /* Optional: Adds rounded corners to the border */
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #1e455f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+/* Section with borders */
+.bordered-section {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1450px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+}
+
+#program-overview, #faculty, #gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.custom-img {
+    border: 2px solid black; /* Adds black border around the image */
+    width: 100%; /* Makes the images take full width of their container */
+    height: 250px; /* Fixes a consistent height for the images */
+    object-fit: cover; /* Ensures the images maintain aspect ratio without distortion */
+}
+
+/* Add some space below the images in the gallery */
+#gallery .row {
+    margin-bottom: 30px; /* Adds space below the images */
+}
+
+/* Add some space above the button */
+#gallery .btn {
+    margin-top: 20px; /* Adds space between the images and the button */
+}
+
+/* Common styles for the headers to make them look like buttons */
+#about-arch-header,
+#course-work-header,
+#student-work-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    padding: 12px 25px; /* Same padding as the buttons */
+    border: 2px solid transparent; /* No border initially */
+    border-radius: 30px; /* Rounded corners like the buttons */
+    background-color: #fff; /* White background by default */
+    transition: all 0.3s ease;
+    display: inline-block; /* Make it inline-block to behave like a button */
+    margin: 10px 0; /* Add some space between the headers */
+}
+
+/* Hover effect for the headers to match the buttons */
+#about-arch-header:hover,
+#course-work-header:hover,
+#student-work-header:hover {
+    color: #fff; /* White text color on hover */
+    background-color: #1e455f; /* Background color matching the button color */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3); /* Add shadow */
+    padding: 12px 25px; /* Maintain padding on hover */
+    border-radius: 30px; /* Keep rounded corners */
+}
+
+/* Back to Home Button */
+/* Back to Home Button */
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensures it stays above other elements */
+  }
+  
+  
+  .back-to-home:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
