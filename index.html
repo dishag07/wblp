@@ -2,82 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Accounting Tax USA</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-900 font-sans">
+
   <!-- Header -->
   <header class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <a href="#" class="flex items-center space-x-2">
-        <img src="logo.png" alt="Accounting Tax USA Logo" class="h-10">
+        <img src="logo.webp" alt="Logo" class="h-10">
+        <span class="font-bold text-xl">ATUSA</span>
       </a>
-      <nav class="space-x-4">
-        <a href="#" class="text-sm text-gray-700 hover:underline">Home</a>
-        <a href="#" class="text-sm text-gray-700 hover:underline">Bookkeeping</a>
-        <a href="#" class="text-sm text-gray-700 hover:underline">Accounting</a>
-        <a href="#" class="text-sm text-gray-700 hover:underline">Tax Preparation</a>
-        <a href="#" class="text-sm text-gray-700 hover:underline">Payroll</a>
-        <a href="#" class="text-sm text-gray-700 hover:underline">More</a>
-        <button class="bg-gray-800 text-white px-3 py-1 rounded text-sm">Sign In</button>
+      <nav class="space-x-4 text-sm">
+        <a href="#" class="text-gray-700 hover:underline">Home</a>
+        <a href="#" class="text-gray-700 hover:underline">Bookkeeping</a>
+        <a href="#" class="text-gray-700 hover:underline">Accounting</a>
+        <a href="#" class="text-gray-700 hover:underline">Tax Preparation</a>
+        <a href="#" class="text-gray-700 hover:underline">Payroll</a>
+        <a href="#" class="text-gray-700 hover:underline">More</a>
+        <button class="bg-gray-800 text-white px-3 py-1 rounded">Sign In</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Image -->
-  <div>
-    <img src="heroimg.avif" alt="Back Taxes" class="w-full h-64 object-cover">
-  </div>
-
-  <!-- About Section -->
-  <section class="max-w-4xl mx-auto px-4 py-10">
-    <div class="flex flex-col md:flex-row items-center md:space-x-8">
-      <div class="md:w-2/3">
-        <h2 class="text-2xl font-semibold mb-4">Meet the Owner</h2>
-        <p class="text-gray-700 mb-4">
-          Hi, I'm Neha Gupta, the proud owner of Accounting Tax USA based in Marlboro, New Jersey. I'm a licensed CPA with a Bachelor's in Finance. I built this firm from the ground up through word-of-mouth referrals and the support of my family and team. Over the past four years, our focus on reliable, client-first service has helped us grow and thrive.
-        </p>
-        <p class="text-gray-700">
-          My goal was to create a transparent, flat-fee, full-service firm with no hidden costs. At Accounting Tax USA, we offer responsive planning, fast turnarounds, and clear answers—whether you're filing personal, business, or cannabis-related returns.
-        </p>
-      </div>
-      <div class="md:w-1/3 mt-6 md:mt-0">
-        <img src="neha.jpg" alt="Neha" class="rounded-lg shadow">
-      </div>
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="header.jpg" alt="Hero Image" class="w-full h-64 object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-3xl md:text-4xl font-bold">Accounting TAX USA</h1>
     </div>
   </section>
+
+  <!-- About Us Section -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-12">
+    
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="neha1.jpeg" alt="About Accounting Tax USA" class="rounded-lg shadow-lg object-cover w-full h-80">
+    </div>
+
+    <!-- Text -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4 text-blue-400">About Us</h2>      <p class="text-gray-700 mb-4">
+        Accounting Tax USA was founded with the goal of providing personalized, transparent, and results-driven accounting services. Based in Marlboro, New Jersey, we serve a wide range of clients including individuals, small businesses, corporations, and specialized industries like cannabis.
+      </p>
+      <p class="text-gray-700 mb-4">
+        Our licensed CPA, Neha Gupta, brings years of financial expertise and a commitment to exceptional service. What sets us apart? Flat-fee pricing, no hidden costs, and fast, responsive communication.
+      </p>
+      <p class="text-gray-700">
+        Whether you're filing your personal taxes or managing multi-state payroll, we're here to simplify your finances and empower your decisions.
+      </p>
+    </div>
+
+  </div>
+</section>
 
 <!-- Services Section -->
 <section class="bg-white py-16">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <h2 class="text-3xl font-bold mb-4">
-      <span class="text-yellow-400">Our</span> Services
+      <span class="text-blue-400">Our Services</span>
     </h2>
     <p class="text-gray-600 mb-10">
-      We offer a wide range of services to both individuals and businesses. We are here for all of your tax, accounting, and advisory needs.
+      We offer a wide range of services to both individuals and businesses. We are here for all of your tax, accounting, and advisory needs. <b>Click for more information about our specific services!</b>
     </p>
 
     <div class="grid gap-8 md:grid-cols-4">
       <!-- Service 1 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-        <img src="service1.jpg" alt="Tax Planning" class="w-full h-56 object-cover">
-        <div class="bg-yellow-400 py-2">
+      <a href="taxplanning.html" class="block bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="tax.avif" alt="Tax Planning" class="w-full h-56 object-cover">
+        <div class="bg-blue-400 py-2 text-center">
           <p class="text-black font-bold text-sm">Tax Planning</p>
         </div>
-      </div>
+      </a>
 
       <!-- Service 2 -->
       <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-        <img src="service2.jpg" alt="Bookkeeping" class="w-full h-56 object-cover">
-        <div class="bg-yellow-400 py-2">
+        <img src="book.jpg" alt="Bookkeeping" class="w-full h-56 object-cover">
+        <div class="bg-blue-400 py-2">
           <p class="text-black font-bold text-sm">Bookkeeping</p>
         </div>
       </div>
 
       <!-- Service 3 -->
       <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-        <img src="service3.jpg" alt="Income Tax Preparation" class="w-full h-56 object-cover">
+        <img src="prep.jpg" alt="Income Tax Preparation" class="w-full h-56 object-cover">
         <div class="bg-yellow-400 py-2">
           <p class="text-black font-bold text-sm">Income Tax Preparation</p>
         </div>
@@ -85,7 +97,7 @@
 
       <!-- Service 4 -->
       <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-        <img src="service4.jpg" alt="Payroll Processing Services" class="w-full h-56 object-cover">
+        <img src="payroll.avif" alt="Payroll Processing Services" class="w-full h-56 object-cover">
         <div class="bg-yellow-400 py-2">
           <p class="text-black font-bold text-sm">Payroll Processing Services</p>
         </div>
@@ -102,6 +114,34 @@
   </div>
 </section>
 
+<!-- Our Locations Section -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-12">
+      <span class="text-yellow-400">Our</span> <span class="text-gray-800">Locations</span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Location 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Aberdeen, New Jersey</h3>
+        <p class="text-gray-600 mb-2">123 Main Street, Suite 200<br>Marlboro, NJ 07746</p>
+        <p class="text-gray-600">Phone: (732) 555-1234</p>
+        <p class="text-gray-600">Email: marlboro@accountingtaxusa.com</p>
+      </div>
+
+      <!-- Location 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Islen, New Jersey</h3>
+        <p class="text-gray-600 mb-2">456 Broadway, 10th Floor<br>New York, NY 10012</p>
+        <p class="text-gray-600">Phone: (212) 555-5678</p>
+        <p class="text-gray-600">Email: nyc@accountingtaxusa.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- JavaScript to rotate quotes -->
 <script>
 // JavaScript code here
@@ -110,9 +150,9 @@
 
  <!-- Contact Form Section -->
 <!-- Contact Form Section -->
-<section class="max-w-4xl mx-auto px-4 py-10">
+<section class="bg-gray-100 max-w-4xl mx-auto px-4 py-10 rounded">
   <h3 class="text-2xl font-semibold mb-6">Contact Us</h3>
-  <form id="contactForm" class="bg-white p-6 rounded shadow space-y-4">
+  <form id="contactForm" class="bg-white p-6 rounded shadow space-y-4 grey">
     <div>
       <label class="block text-sm font-medium text-gray-700">Name</label>
       <input type="text" name="name" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Your Name" required>
