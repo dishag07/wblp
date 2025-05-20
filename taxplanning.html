@@ -90,9 +90,69 @@
       </p>
     </div>
   </div>
-</section>
 
-
+  <section class="py-5 bg-gray-100 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-xl font-bold mb-4">Details</h2>
+  
+      <h5 id="about-arch1-header" class="cursor-pointer text-blue-600 hover:underline mb-2">Small Businesses</h5>
+      <div id="about-arch1-content" class="hidden mb-4">
+        <p class="text-gray-700">
+          Our Small Business Account Services include tasks such as tax accountant
+          <ol> 1. Cash Flow Management</ol>
+            <ol> 2. Strategic Business Tax Planning</ol>
+            <ol>3. New Business Formation</ol>
+            <ol>4. Tax Audit Assistance</ol>
+            <ol>5. Compilation of Financial Statements</ol>
+            <ol>6. Bookkeeping</ol>
+            <ol>7. Review of Analytical Procedures</ol>
+            <ol>8. Payroll Services</ol>
+            <ol>9. Sales & Use Tax Preparation</ol>
+        </p>
+      </div>
+  
+      <h5 id="course-work1-header" class="cursor-pointer text-blue-600 hover:underline mb-2">Corporate</h5>
+      <ul id="course-work1-list" class="hidden mb-4 text-gray-700">
+        <li>We provide comprehensive accounting services including:</li>
+        <li>2. General Ledger & Financial Statement Preparation</li>
+        <li>3. Full Service Payroll Preparation</li>
+        <li>4. Bookkeeping (Monthly / Quarterly / Annually)</li>
+        <li>5. Tax Planning & Tax Preparation</li>
+        <li>6. New Business Accounting System Setup</li>
+        <li>7. Audit Support</li>
+      </ul>
+  
+      <h5 id="student-work1-header" class="cursor-pointer text-blue-600 hover:underline mb-2">Estate and Trust</h5>
+      <div id="student-work1-list" class="hidden space-x-2">
+        <p class="text-gray-700">
+          Managing estate and trust finances can be time-consuming and complex, but the experienced team at Accounting Tax USA is here to help. We handle all general accounting duties, ensuring accurate records, proper tax filings, and correct distributions to beneficiaries. Working closely with your attorney, insurance agent, and investment advisor, we analyze legal and financial documents, address tax and probate concerns, and develop plans to minimize estate taxes while meeting your family's future needs. From estate preparation and tax planning to fiduciary accounting and income tax returns, we ensure your legacy is preserved and compliance requirements are met with ease.
+        </p>
+      </div>
+  </section>
+  <h3 class="text-xl text-center mb-10">
+    If you are in search of a Business Accountant, please contact us for further assistance. 
+    We can discuss your specific needs and schedule a free consultation. 
+    You can reach us at <a href="tel:+17327020344" class="text-blue-600 hover:underline">(732) 702-0344</a>.
+  </h3>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function setupToggle(headerId, contentId) {
+        const header = document.querySelector(headerId);
+        const content = document.querySelector(contentId);
+        if (header && content) {
+          header.addEventListener("click", function () {
+            content.classList.toggle("hidden");
+          });
+        }
+      }
+  
+      // Setup toggles
+      setupToggle("#about-arch1-header", "#about-arch1-content");
+      setupToggle("#course-work1-header", "#course-work1-list");
+      setupToggle("#student-work1-header", "#student-work1-list");
+    });
+  </script>
+  
   <!-- Footer -->
   <footer class="bg-white border-t py-8">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 text-sm text-gray-600">
@@ -135,5 +195,34 @@
     </div>
   </footer>
 
+</body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setupToggle(headerId, contentId) {
+      const header = document.querySelector(headerId);
+      const content = document.querySelector(contentId);
+      if (header && content) {
+        header.addEventListener("click", function () {
+          content.classList.toggle("d-none");
+        });
+      }
+    }
+
+    // Setup toggles for all sections
+    setupToggle("#about-arch1-header", "#about-arch1-content");
+    setupToggle("#course-work1-header", "#course-work1-list");
+    setupToggle("#student-work1-header", "#student-work1-list");
+
+    setupToggle("#about-arch2-header", "#about-arch2-content");
+    setupToggle("#course-work2-header", "#course-work2-list");
+    setupToggle("#student-work2-header", "#student-work2-list");
+
+    setupToggle("#about-arch3-header", "#about-arch3-content");
+    setupToggle("#course-work3-header", "#course-work3-list");
+    setupToggle("#student-work3-header", "#student-work3-list");
+  });
+</script>
 </body>
 </html>
