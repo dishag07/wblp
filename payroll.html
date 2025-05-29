@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accounting Tax USA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="logo.webp" alt="Logo" class="h-10">
+        <span class="font-bold text-xl">ATUSA</span>
+      </a>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="text-gray-700 hover:underline">Home</a>
+        <a href="bookkeeping.html" class="text-gray-700 hover:underline">Bookkeeping</a>
+        <a href="taxplanning.html" class="text-gray-700 hover:underline">Accounting</a>
+        <a href="taxprep.html" class="text-gray-700 hover:underline">Tax Preparation</a>
+        <a href="payroll.html" class="text-gray-700 hover:underline">Payroll</a>
+        <a href="#" class="text-gray-700 hover:underline">More</a>
+        <button class="bg-gray-800 text-white px-3 py-1 rounded">Sign In</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="header.jpg" alt="Hero Image" class="w-full h-64 object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-3xl md:text-4xl font-bold">Payroll</h1>
+    </div>
+  </section>
+
+
+  
+    <main class="container mx-auto px-4 py-10 grid gap-12">
+      <!-- Section Card Component -->
+      <section class="bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+        <h2 class="text-2xl font-bold mb-4">Payroll Services Made Easy</h2>
+        <p class="text-gray-700">Are you overwhelmed by the responsibility of managing payroll? Let Accounting Tax USA take the burden off your shoulders. Our professional payroll services help you focus on growing your business while we handle the complexities.</p>
+        <p class="text-gray-700 mt-2">Whether you're a small business or a large corporation, our inclusive payroll solutions save you time, money, and stress.</p>
+      </section>
+  
+      <section class="bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+        <h2 onclick="toggleContent('whyChoose')" class="cursor-pointer text-2xl font-bold mb-4 text-blue-800 hover:underline">Why Choose a Professional Payroll Service?</h2>
+        <div id="whyChoose" class="space-y-4">
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Saves time on paperwork, bank visits, and check-writing</li>
+            <li>Eliminates the need for expensive payroll software</li>
+            <li>Ensures compliance with tax laws and filing deadlines</li>
+            <li>Adapts to changing tax rates and regulations</li>
+          </ul>
+          <p class="text-gray-700">Our expert team manages all federal, state, and local requirements, so your payroll is always accurate and on time.</p>
+        </div>
+      </section>
+  
+      <section class="bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+        <h2 onclick="toggleContent('tailored')" class="cursor-pointer text-2xl font-bold mb-4 text-blue-800 hover:underline">Tailored Solutions for Every Business</h2>
+        <div id="tailored" class="space-y-4">
+          <p class="text-gray-700">We offer fully integrated payroll solutions designed to meet the unique needs of your business. Our team has deep knowledge of:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Social Security & Medicare</li>
+            <li>Workers' Compensation</li>
+            <li>Federal, state, and local taxes</li>
+          </ul>
+          <p class="text-gray-700">We personalize our service to your needs and deliver excellent customer support every step of the way.</p>
+        </div>
+      </section>
+  
+      <section class="bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+        <h2 onclick="toggleContent('whatIs')" class="cursor-pointer text-2xl font-bold mb-4 text-blue-800 hover:underline">What is a Payroll Service?</h2>
+        <div id="whatIs" class="space-y-4">
+          <p class="text-gray-700">A payroll service manages employee payments and employment tax filings on behalf of a business. This includes:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Gathering employee wage and hour data</li>
+            <li>Calculating gross wages and tax deductions</li>
+            <li>Issuing paychecks or direct deposits</li>
+            <li>Filing required tax documents</li>
+          </ul>
+          <p class="text-gray-700">Each client gets a custom account to track employee hours, benefits, and compliance. On payday, employees receive their pay, and the business receives a detailed payroll and tax report.</p>
+        </div>
+      </section>
+  
+      <section class="bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+        <h2 onclick="toggleContent('executives')" class="cursor-pointer text-2xl font-bold mb-4 text-blue-800 hover:underline">Executive Profiles</h2>
+        <div id="executives" class="space-y-4">
+          <p class="text-gray-700">A company is only as strong as its leadership. Highlight your key executives with short bios that include:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Their role in the company</li>
+            <li>Years of experience</li>
+            <li>Career background and accomplishments</li>
+          </ul>
+          <p class="text-gray-700">These profiles build trust and show the expertise driving your business.</p>
+        </div>
+      </section>
+    </main>
+  
+    <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
+      <p>&copy; 2025 Accounting Tax USA. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>
